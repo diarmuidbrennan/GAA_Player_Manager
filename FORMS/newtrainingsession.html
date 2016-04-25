@@ -1,0 +1,67 @@
+<form class="" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+	<div>
+		<h2 class="create_h2_header">Register New Training Session</h2>
+			<table class="npform">
+				<tr><td>
+					<label>
+
+						<?php
+							//select an season status
+							$sqlDataSeason="SELECT * FROM season";
+							$rsDataSeason=getTableData($conn,$sqlDataSeason);
+							$arrayDataSeason=checkResultSet($rsDataSeason);
+							echo "<select name=\"Season\">";
+							echo "<option>Choose a year</option>";
+							foreach($arrayDataSeason as $row) {
+								$season = $row['Season'];
+								$id=$row['Season_ID'];  //get the current PK value
+								echo "<option value='". $id ."'>". $season ."</option>"; 
+							}
+							echo "</select><br><br>";
+							
+							//select an training type
+							$sqlDataTraining="SELECT * FROM training_type";
+							$rsDataTraining=getTableData($conn,$sqlDataTraining);
+							$arrayDataTraining=checkResultSet($rsDataTraining);
+							echo "<select name=\"TrainingType\">";
+							echo "<option>Type of Training</option>";
+							foreach($arrayDataTraining as $row) {
+								$training = $row['Training_Type'];
+								$id=$row['Training_Type_ID'];  //get the current PK value
+								echo "<option value='". $id ."'>". $training ."</option>"; 
+								}
+							echo "</select><br>";
+							?>
+
+<!--Choose a date-->
+<span>Date</span>
+<input name="TrainingDate" type="date" required="false" title="Date" pattern="[a-zA-Z0-9óáéí']{1,200}"><br>
+
+<!--Choose a Time-->
+<span>Time</span>
+<input name="TrainingTime" type="time" required="false" title="Time (24hr)" pattern="[a-zA-Z0-9óáéí']{1,200}" data-tip="Enter Time (24hrs)"><br>
+
+<!--Notes-->
+<span>Notes</span>
+<input name="Notes" type="text" required="true"  title="Notes" pattern="[a-zA-Z0-9óáéí' ]{1,200}" data-tip="Enter Match Notes"><br>
+
+<!--Estimated RPE-->
+<span>Estimated RPE</span>
+<input name="EstimatedRPE" type="text" required="true"  title="EstimatedRPE" pattern="[0-9 ]{1,2}" data-tip="Enter Estimated RPE"><br>
+
+<!--Estimated Lenght-->
+<span>Estimated Lenght</span>
+<input name="EstimatedLenght" type="text" required="true"  title="EstimatedLenght" pattern="[0-9 ]{1,3}" data-tip="Enter Estimated Lenght of Training"><br>
+					
+					</label>
+					<tr><td>
+				<label>
+
+<span>Hit Enter to Register New Training Session</span>
+<input name="send" type="submit" id="sendButton" value="Enter">
+
+				</label>
+			</td></tr>
+		</table>
+	</div>
+</form>

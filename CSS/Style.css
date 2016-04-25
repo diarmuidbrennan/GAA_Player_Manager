@@ -1,0 +1,1013 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+}
+
+
+body {
+    background: url("../IMAGES/crokepark4.jpg");
+}
+
+header {
+    background: url("../IMAGES/gaaplayerimage.png") no-repeat; 
+    margin-left: auto;
+    margin-right: auto;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	list-style: none;
+    border-radius: 50px;
+}
+
+#header_option {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 230px;
+    background-color:#A3BDDA;
+    color: black;
+    clear: both;
+    text-align:center;
+    padding:5px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+#navigation_option {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color:#A3BDDA;
+    color: black;
+    clear: both;
+    text-align:center;
+    padding:5px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+#indexpage_box_container {
+    background-color: #A3BDDA;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.index_headers {
+    text-align: center;
+    color: black;
+}
+
+.indexpage_box {
+    width: 100%;
+    height: 350px;
+}
+
+.index_page_div {
+    padding: 10px;
+}
+
+.index_page_buttons {
+    width: 90%;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -o-linear-gradient(top, #C3C2B0, #060000);
+    background-image: linear-gradient(to bottom, #C3C2B0, #060000);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.profile_images {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.displayprofile {
+        margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.training_page_buttons {
+    width: 45%;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -o-linear-gradient(top, #C3C2B0, #060000);
+    background-image: linear-gradient(to bottom, #C3C2B0, #060000);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+
+.gamepage_box {
+    width: 100%;
+    height: 660px;
+}
+
+.matches_page_buttons {
+    width: 30%;
+    background: #C3C2B0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: -webkit-linear-gradient(top, #6B9AFF, #4353FF);
+    background-image: -moz-linear-gradient(top, #6B9AFF, #4353FF);
+    background-image: -ms-linear-gradient(top, #6B9AFF, #4353FF);
+    background-image: -o-linear-gradient(top, #6B9AFF, #4353FF);
+    background-image: linear-gradient(top, #6B9AFF, #4353FF);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 30px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.change_team {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logout_div {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    background: 
+}
+
+.settingdropdown {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.changeteambutton {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 5px;
+    margin:2px;
+    width: 220px;
+    height: 40px;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -o-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: linear-gradient(to bottom, #C3C2B0, #23272D);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.create_h2_header {
+        text-align: center;
+}
+
+.rpe_profile_page {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rpe_profile_page_buttons {
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #060000);
+    background-image: -o-linear-gradient(top, #C3C2B0, #060000);
+    background-image: linear-gradient(to bottom, #C3C2B0, #060000);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#profile_page_container {
+    background-color: #A3BDDA;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+#profile_page_left_box {
+    padding: 10px;
+}
+
+#profile_page_right_box {
+    padding: 10px;
+}
+
+.playerprofilebutton {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 5px;
+    position:static;
+    list-style: none;
+    float:left;
+    margin:4px;
+    width: 170px;
+    height: 40px;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -o-linear-gradient(top, #C3C2B0, #076598);
+    background-image: linear-gradient(to bottom, #C3C2B0, #076598);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bootstrap-switch { 
+    height: 30px 
+}
+
+.attendenceprofilebutton {
+    padding-bottom: 5px;
+    list-style: none;
+    margin:4px;
+    width: 30%;
+    height: 40px;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #076598);
+    background-image: -o-linear-gradient(top, #C3C2B0, #076598);
+    background-image: linear-gradient(to bottom, #C3C2B0, #076598);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.attendenceprofileswitch {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    list-style: none;
+}
+
+.trainingattendencenote {
+    display: inline-block;
+    width: 200px;
+    list-style: none;
+    position:relative;
+}
+
+.trainingattendence {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ .attendence_header {
+    text-align: center;
+ }
+
+
+.playerprofilemenubutton {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+    float:left;
+    margin:2px;
+    width: 220px;
+    height: 40px;
+    background: #C3C2B0;
+    background-image: -webkit-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -moz-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -ms-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: -o-linear-gradient(top, #C3C2B0, #23272D);
+    background-image: linear-gradient(to bottom, #C3C2B0, #23272D);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    }
+
+#displayGAAuserformheader {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingspage_box {
+    
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+nav ul li a {
+    padding: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#gaa_image {
+    background-color: #008001;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 460px;
+    border: 5px solid black;
+    text-align: center;
+    list-style: none;
+    border-radius: 20px;
+}
+
+#injury_image_edit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 5px solid black;
+    text-align: center;
+    list-style: none;
+    border-radius: 20px;
+}
+
+.injuryimage_title {
+    text-align: center;
+}
+
+
+.numberCircle1head, .numberCircle2shoulder,.numberCircle3hand, .numberCircle4knee,
+.numberCircle5back, .numberCircle6hip, .numberCircle7groin, .numberCircle8hamstring,
+.numberCircle9quad, .numberCircle10calf, .numberCircle11ankle, .numberCircle12foot {
+    position:absolute;
+    z-index: 0;
+    position:absolute;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    background: #A3BDDA;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 24px Arial, sans-serif;
+}
+
+.numberCircle1head {
+    top: 90px;
+    left: 250px;
+}
+
+.numberCircle2shoulder {
+    top: 170px;
+    left: 170px;
+}
+
+.numberCircle3hand {
+    top: 270px;
+    left: 170px;
+}
+
+.numberCircle4knee {
+    top: 435px;
+    left: 240px;
+}
+
+.numberCircle5back {
+    top: 290px;
+    left: 250px;
+}
+
+.numberCircle6hip {
+    top: 330px;
+    left: 280px;
+}
+
+.numberCircle7groin {
+    top: 350px;
+    left: 200px;
+}
+
+.numberCircle8hamstring {
+    top: 390px;
+    left: 250px;
+}
+
+.numberCircle9quad {
+    top: 410px;
+    left: 200px;
+}
+
+.numberCircle10calf {
+    top: 500px;
+    left: 260px;
+}
+
+.numberCircle11ankle {
+    top: 560px;
+    left: 260px;
+}
+
+.numberCircle12foot {
+    top: 580px;
+    left: 200px;
+}
+
+
+
+
+
+
+
+#gaa_image_edit {
+    height: 100%;
+    width: 100%;
+}
+
+.playerbutton {
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color: black;
+}
+
+#playerbutton1 {
+    position:absolute;
+    top: 50px;
+    left: 250px;
+    z-index: 0;
+}
+#playerbutton2 {
+    position:absolute;
+    top: 100px;
+    left: 140px;
+    z-index: 0;
+}
+#playerbutton3 {
+    position:absolute;
+    top: 100px;
+    left: 250px;
+    z-index: 0;
+}
+#playerbutton4 {
+    position:absolute;
+    top: 100px;
+    left: 360px;
+    z-index: 0;
+}
+#playerbutton5 {
+    position:absolute;
+    top: 160px;
+    left: 140px;
+    z-index: 0;
+}
+#playerbutton6 {
+    position:absolute;
+    top: 160px;
+    left: 250px;
+    z-index: 0;
+}
+#playerbutton7 {
+    position:absolute;
+    top: 160px;
+    left: 360px;
+    z-index: 0;
+}
+#playerbutton8 {
+    position:absolute;
+    top: 220px;
+    left: 180px;
+    z-index: 0;
+}
+#playerbutton9 {
+    position:absolute;
+    top: 220px;
+    left: 320px;
+    z-index: 0;
+}
+#playerbutton10 {
+    position:absolute;
+    top: 280px;
+    left: 140px;
+    z-index: 0;
+}
+#playerbutton11 {
+    position:absolute;
+    top: 280px;
+    left: 250px;
+    z-index: 0;
+}
+#playerbutton12 {
+    position:absolute;
+    top: 280px;
+    left: 360px;
+    z-index: 0;
+}
+#playerbutton13 {
+    position:absolute;
+    top: 340px;
+    left: 140px;
+    z-index: 0;
+}
+#playerbutton14 {
+    position:absolute;
+    top: 340px;
+    left: 250px;
+    z-index: 0;
+}#playerbutton15 {
+    position:absolute;
+    top: 340px;
+    left: 360px;
+    z-index: 0;
+}#playerbutton16 {
+    position:absolute;
+    top: 400px;
+    left: 140px;
+    z-index: 0;
+}#playerbutton17 {
+    position:absolute;
+    top: 400px;
+    left: 250px;
+    z-index: 0;
+}#playerbutton18 {
+    position:absolute;
+    top: 400px;
+    left: 360px;
+    z-index: 0;
+}#playerbutton19 {
+    position:absolute;
+    top: 440px;
+    left: 140px;
+    z-index: 0;
+}#playerbutton20 {
+    position:absolute;
+    top: 440px;
+    left: 250px;
+    z-index: 0;
+}#playerbutton21 {
+    position:absolute;
+    top: 440px;
+    left: 360px;
+    z-index: 0;
+}#playerbutton22 {
+    position:absolute;
+    top: 480px;
+    left: 140px;
+    z-index: 0;
+}
+#playerbutton23 {
+    position:absolute;
+    top: 480px;
+    left: 250px;
+    z-index: 0;
+}
+#playerbutton24 {
+    position:absolute;
+    top: 480px;
+    left: 360px;
+    z-index: 0;
+}
+#playerbutton25 {
+    position:absolute;
+    top: 520px;
+    left: 180px;
+    z-index: 0;
+}
+#playerbutton26 {
+    position:absolute;
+    top: 520px;
+    left: 320px;
+    z-index: 0;
+}
+
+section {
+    width:800px;
+	height:650px;
+    float:left;
+    padding:5px;
+	overflow: auto;	
+}
+
+section.wide {
+    width:1200px;
+	height:650px;
+    float:left;
+    padding:5px;
+	overflow: auto;	
+}
+
+section.right {
+	background-color:#eeeeee;
+    width:250px;
+	height:650px;
+    float:right;
+    padding:5px;	 	
+	overflow: auto;	
+}
+
+footer {
+    width: 100%;
+}
+
+footer.debug {
+    background-color:#ccddaa;
+    color:red;
+    clear:both;
+    text-align:left;
+    padding:5px;	 	 
+}
+
+footer.copyright {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+form.button    {
+margin: 50;
+position:left;
+width:400px;
+height:25px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+form.small_button    {
+margin: 5;
+position:left;
+width:50px;
+height:25px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+}
+
+form.getinput    {
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:50;
+position:left;
+width:600px;
+height:300px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #666666;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.register {
+text-align: center;
+}
+
+form.userlogin    {
+text-align: center;
+background: #A3BDDA;
+margin:50;
+position:center;
+width:500px;
+height:400px;
+font-family: Ariel, Geneva, sans-serif;
+font-size: 14px;
+line-height: 24px;
+font-weight: bold;
+color: black;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+
+}
+.newplayerform {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position:center;
+}
+
+.npform{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position:center;
+}
+
+form.newplayerform    {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #A3BDDA;
+    position:center;
+    width:960px;
+    height:800px;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+
+
+form.editrainingform    {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 700px;
+    background: #A3BDDA;
+    position:center;
+    width:960px;
+    height:960px;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #666666;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+
+form.register    {
+text-align: center;
+background: white;
+
+margin:50;
+position:center;
+width:600px;
+height:510px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #666666;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input    {
+text-align: center;
+background: ;
+width:375px;
+display:block;
+border: 1px solid #999;
+border-radius: 10px;
+height: 35px;
+
+}
+
+input.small   {
+
+width:50px;
+}
+input.smallBtn  {
+
+width:55px;
+}
+
+option    {
+width:375px;
+display:block;
+border: 1px solid #999;
+height: 35px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+select    {
+width:375px;
+display:block;
+border: 1px solid #999;
+height: 35px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+	padding: 50;
+	margin: 50;
+}
+
+
+caption {
+	padding: 0 0 5px 0;
+	font: italic 30px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+th {
+	font: bold 20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+
+
+
+td {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#EEEEEE), to(#CCCCCC));
+	background: -moz-linear-gradient(bottom, #EEEEEE, #CCCCCC 175px);
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	padding: 6px 6px 6px 12px;
+
+}
+
+[data-tip] {
+    position:relative;
+
+}
+[data-tip]:before {
+    content:'';
+    /* hides the tooltip when not hovered */
+    display:none;
+    content:'';
+    display:none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #1a1a1a;
+    position:absolute;
+    top:30px;
+    left:35px;
+    z-index:8;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+    position:absolute;
+    top:30px;
+    left:35px;
+    z-index:8;
+    font-size:0;
+    line-height:0;
+    width:0;
+    height:0;
+}
+[data-tip]:after {
+    display:none;
+    content:attr(data-tip);
+    position:absolute;
+    top:35px;
+    left:0px;
+    padding:5px 8px;
+    background:#1a1a1a;
+    color:#fff;
+    z-index:9;
+    font-size: 0.75em;
+    height:18px;
+    line-height:18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+    display:block;
+}
+
+
+span..weak{
+	color:#E66C2C;
+}
+
+span. .good{
+	color:#2D98F3;
+}
+
+span. .strong{
+	color:#006400;
+}
+
+span.short
+{
+color:#FF0000;
+}

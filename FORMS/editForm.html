@@ -1,0 +1,21 @@
+<form class="register" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2>EDIT RECORD</h2>
+<table class="form">
+<tr>
+	<td>
+	<label>
+	<span>First Name</span><input name="FirstName" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}" value = <?php echo $firstname;?>>
+	<span>Last Name</span><input name="LastName" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}" value = <?php echo $lastname;?>>
+	<span>Password</span><input name="Password" type="text" required="true" title="Password (min 5 to 8 Characters)" value = <?php echo $password;?>>
+
+	</label>
+	</td>
+</tr>
+<br>
+<button class="smallBtn" name="Save" type="submit" value="<?php echo $id;?>">Update</button>
+<button class="smallBtn" name="CANCEL" type="submit" value="">Cancel</button>
+
+</div>
+</form>
+

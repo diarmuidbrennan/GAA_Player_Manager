@@ -1,0 +1,27 @@
+<form class="register" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2>New Lecturer Registration Form (with validation)</h2>
+<table class="form">
+<tr><td>
+<label>
+<span>Lecturer ID</span><input name="lectID" type="text" required="true"  title="Lecturer ID (5 to 10 Characters) - Enter Characters A-Z,a-z and/or numbers 0-9" pattern="[a-zA-Z0-9]{5,10}" >
+<span>First Name</span><input name="lectFirstName" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Last Name</span><input name="lectLastName" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Password</span><input name="lectPass1" type="password" required="true" title="Password (min 5 to 8 Characters)" pattern="[A-Za-z-0-9_]{5,8}">
+<span>Re-enter Password</span><input name="lectPass2" type="password" required="true" title="Password (5 to 8 Characters a-z,A-Z,0-9 and underscore)" pattern="[A-Za-z-0-9_]{5,8}">
+</label>
+</td></tr>
+
+<tr><td>
+</td></tr>
+
+<tr><td>
+<label>
+<span>Hit Enter to Register</span>
+<input name="send" type="submit" id="sendButton" value="Enter">
+</label>
+</td></tr>
+</table>
+</div>
+</form>
+

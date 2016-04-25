@@ -1,0 +1,65 @@
+<form class="newplayerform" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2>Register Injury</h2>
+<table class="npform">
+<tr><td>
+<label>
+
+
+<?php
+//select users
+$sqlDataUsername="SELECT * FROM users WHERE Team =1";
+$rsDataUsername=getTableData($conn,$sqlDataUsername);
+$arrayDataUsername=checkResultSet($rsDataUsername);
+echo "<select name=\"Users\">";
+echo "<option>Choose a User</option>";
+	foreach($arrayDataUsername as $row) {
+				$name = $row['First_Name']. ' ' .$row['Last_Name'];
+				$id=$row['User_ID'];  //get the current PK value
+echo "<option value='". $id ."'>". $name ."</option>"; 
+}
+echo "</select><br>";
+
+//select an injury
+$sqlDataUsername="SELECT * FROM injury_types";
+$rsDataUsername=getTableData($conn,$sqlDataUsername);
+$arrayDataUsername=checkResultSet($rsDataUsername);
+echo "<select name=\"InjuryType\">";
+echo "<option>Choose a Injury</option>";
+	foreach($arrayDataUsername as $row) {
+				$name = $row['Injury_Type'];
+				$id=$row['Injury_Types_ID'];  //get the current PK value
+echo "<option value='". $id ."'>". $name ."</option>"; 
+}
+echo "</select><br>";
+
+//select an injury status
+$sqlDataUsername="SELECT * FROM recovery_status";
+$rsDataUsername=getTableData($conn,$sqlDataUsername);
+$arrayDataUsername=checkResultSet($rsDataUsername);
+echo "<select name=\"RecoveryStatus\">";
+echo "<option>What Is The Injury Status</option>";
+	foreach($arrayDataUsername as $row) {
+				$name = $row['Recovery_Status'];
+				$id=$row['Recovery_Status_ID'];  //get the current PK value
+echo "<option value='". $id ."'>". $name ."</option>"; 
+}
+echo "</select><br>";
+?>
+
+
+
+<label>Comments on Injury</label><input name="Comment" type="text" id="myText" pattern="[a-zA-Z0-9óáéí'- ]{1,200}" placeholder="Comments on Injury" value=""/><br>
+
+<span>Date Injured</span><input name="DateInjured" type="date" required="true" title="Date" pattern="[a-zA-Z0-9óáéí']{1,200}"value = <?php echo $DateInjured;?>><br>
+
+<span>Estimated Date of Return</span><input name="DateOfReturn" type="date" required="true" title="Date" pattern="[a-zA-Z0-9óáéí']{1,200}"value = <?php echo $DateOfReturn;?>><br>
+
+<span>Hit Enter to Register</span>
+<input name="send" type="submit" id="sendButton" value="Enter">
+</label>
+</td></tr>
+</table>
+</div>
+</form>
+

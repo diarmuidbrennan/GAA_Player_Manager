@@ -1,0 +1,46 @@
+<form class="" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2 class="create_h2_header">Register New Player</h2>
+<table class="npform">
+<tr><td>
+<label>
+<span>Username</span>
+<input name="Username" type="text" required="true"  title="Username (20 Characters)" pattern="[a-zA-Z0-9]{1,20}" data-tip="Enter Characters A-Z,a-z and/or numbers 0-9">
+<span>Password</span>
+<input name="Password1" id="password" type="password" required="true" title="Password (min 5 to 15 Characters)" pattern="[A-Za-z-0-9_]{5,15}">
+<span>Re-enter Password</span>
+<input name="Password2"  type="password" required="true" title="Password2 (5 to 15 Characters a-z,A-Z,0-9 and underscore)" pattern="[A-Za-z-0-9_]{5,15}">
+<span>First Name</span>
+<input name="FirstName" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Last Name</span>
+<input name="LastName" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Date Of Birth</span>
+<input name="DOB" type="date" required="true" title="yyyy/mm/dd" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Height</span>
+<input name="Height" type="text" required="true" title="Height (cm)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Weight</span>
+<input name="Weight" type="text" required="true" title="Weight (kg)" pattern="[a-zA-Z0-9óáéí']{1,48}">
+<span>Email</span>
+<input name="Email" type="text" required="true" title="Email" pattern="[a-zA-Z0-9óáéí.@']{1,48}">
+<span>Phone</span>
+<input name="Phone" id="phone" type="text" required="true" title="Mobile Phone Number" pattern="[0-9_]{5,15}"><br>
+<span>Select image to upload:</span>
+<input type="file" name="fileToUpload" id="fileToUpload"><br>
+
+</label>
+
+</td></tr>
+
+<tr><td><span style="color:#E31717" >Password Strength Indicator-->: </span><span id="result"></span>
+</td></tr>
+
+<tr><td>
+<label>
+<span>Hit Enter to Register</span><br>
+
+<button class="playerprofilemenubutton" name="send" type="submit" value="">Save</button>
+</label>
+</td></tr>
+</table>
+</div>
+</form>

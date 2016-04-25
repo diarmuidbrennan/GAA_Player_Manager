@@ -1,0 +1,58 @@
+<form class="" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2 id="displayGAAuserformheader">New Match Fixture</h2>
+<table class="npform">
+<tr><td>
+<label>
+
+
+<?php
+//select an season status
+$sqlDataSeason="SELECT * FROM season";
+$rsDataSeason=getTableData($conn,$sqlDataSeason);
+$arrayDataSeason=checkResultSet($rsDataSeason);
+echo "<select name=\"Season\">";
+echo "<option>Choose a year</option>";
+	foreach($arrayDataSeason as $row) {
+				$season = $row['Season'];
+				$id=$row['Season_ID'];  //get the current PK value
+echo "<option value='". $id ."'>". $season ."</option>"; 
+}
+echo "</select><br>";
+?>
+
+<!--Choose a date-->
+<span>Date</span><input name="date" type="date" required="false" title="Date" pattern="[a-zA-Z0-9óáéí']{1,200}"value = <?php echo $Date;?>><br>
+
+<!--Choose a Time-->
+<span>Time</span><input name="Time" type="time" required="false" title="Time (24hr)" pattern="[a-zA-Z0-9óáéí']{1,200}"value = <?php echo $Time;?> data-tip="Enter Time (24hrs)"><br>
+
+<!--Competition-->
+<span>Competition</span><input name="Competition" type="text" required="true"  title="Competition" pattern="[a-zA-Z0-9óáéí']{1,200}" data-tip="Enter Competition">
+
+<!--Oppossition-->
+<span>Oppossition</span><input name="Oppossition" type="text" required="true"  title="Oppossition" pattern="[a-zA-Z0-9óáéí' ]{1,200}" data-tip="Enter Match Oppossition">
+
+<!--Location-->
+<span>Location</span><input name="Location" type="text" required="true"  title="Location" pattern="[a-zA-Z0-9óáéí' ]{1,200}" data-tip="Enter Match Location">
+
+<!--Result-->
+<span>Result</span><input name="Result" type="text"  title="Result" pattern="[a-zA-Z0-9óáéí' ]{1,200}" data-tip="Enter Match Result">
+
+<!--Notes-->
+<span>Notes</span><input name="Notes" type="text"  title="Notes" pattern="[a-zA-Z0-9óáéí' ]{1,200}" data-tip="Enter Match Notes">
+
+
+</label>
+
+
+
+<tr><td>
+<label>
+<span>Hit Enter to Register New Match</span>
+<input name="send" type="submit" id="sendButton" value="Enter">
+</label>
+</td></tr>
+</table>
+</div>
+</form>

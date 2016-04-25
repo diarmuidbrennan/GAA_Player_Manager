@@ -1,0 +1,29 @@
+<form class="newplayerform" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<div>
+<h2>Edit Player</h2>
+<table class="npform">
+<tr><td>
+<label>
+<span>Username</span><input name="Username" type="text" required="true"  title="Username (20 Characters)" pattern="[a-zA-Z0-9]{1,20}" data-tip="Enter Characters A-Z,a-z and/or numbers 0-9" value = <?php echo $Username;?>>
+<span>First Name</span><input name="FirstName" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $FirstName;?>>
+<span>Last Name</span><input name="LastName" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $LastName;?>>
+<span>Date Of Birth</span><input name="DOB" type="date" required="true" title="yyyy/mm/dd" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $DOB;?>>
+<span>Height</span><input name="Height" type="text" required="true" title="Height (cm)" pattern="[a-zA-Z0-9óáéí']{1,48}" value = <?php echo $Height;?>>
+<span>Weight</span><input name="Weight" type="text" required="true" title="Weight (kg)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $Weight;?>>
+<span>Email</span><input name="Email" type="text" required="true" title="Email" pattern="[a-zA-Z0-9óáéí.@']{1,48}" value = <?php echo $email;?>>
+<span>Phone</span><input name="Phone" id="phone" type="text" required="true" title="Mobile Phone Number" pattern="[0-9_]{5,15}"value = <?php echo $phone;?>><br>
+<span>Select image to upload:</span>
+<input type="file" name="fileToUpload" id="fileToUpload" value = <?php echo $image;?>><br>
+</label>
+
+</td></tr>
+
+<tr><td>
+<label>
+<button class="playerprofilemenubutton" name="SAVE" type="submit" value="<?php echo $id;?>">Update</button>
+<button class="playerprofilemenubutton" name="CANCEL" type="submit" value="">Cancel</button>
+</label>
+</td></tr>
+</table>
+</div>
+</form>

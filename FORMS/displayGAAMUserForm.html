@@ -1,0 +1,70 @@
+<form class="newplayerform" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+	<div>
+		<h2 id="displayGAAuserformheader">Player</h2>
+			<table class="">
+				<tr><td>
+					<label>
+	<!--Username-->
+<span>Username</span><input name="Username" type="text" required="true"  title="Username (20 Characters)" pattern="[a-zA-Z0-9]{1,20}" data-tip="Enter Characters A-Z,a-z and/or numbers 0-9" value = <?php echo $Username;?>>
+	
+	<!--User Type 1->Admin, 2->Management, 3->Player -->
+<span>User Type</span><input name="UserType" type="text" required="true" title="User Type 1->Admin, 2->Management, 3->Player" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $UserType;?>>	
+	
+	<!--First Name-->
+<span>First Name</span><input name="FirstName" type="text" required="true" title="First Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $FirstName;?>>
+	
+	<!--Last Name-->
+<span>Last Name</span><input name="LastName" type="text" required="true" title="Last Name (up to 45 Characters)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $LastName;?>>
+	
+	<!--Date Of Birth-->
+<span>Date Of Birth</span><input name="DOB" type="date" required="true" title="yyyy/mm/dd" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $DOB;?>>
+	
+	<!--Height-->
+<span>Height</span><input name="Height" type="text" required="true" title="Height (cm)" pattern="[a-zA-Z0-9óáéí']{1,48}" value = <?php echo $Height;?>>
+	
+	<!--Weight-->
+<span>Weight</span><input name="Weight" type="text" required="true" title="Weight (kg)" pattern="[a-zA-Z0-9óáéí']{1,48}"value = <?php echo $Weight;?>>
+	
+	<!--Email-->
+<span>Email</span><input name="Email" type="text" required="true" title="Email" pattern="[a-zA-Z0-9óáéí.@']{1,48}" value = <?php echo $email;?>>
+	
+	<!--Phone-->
+<span>Phone</span><input name="Phone" id="phone" type="text" required="true" title="Mobile Phone Number" pattern="[0-9_]{5,15}"value = <?php echo $phone;?>>
+	
+	<!--Enabled-->
+<span>Enabled</span><input name="Enabled" id="Enabled" type="text" required="true" title="Mobile Phone Number" pattern="[0-9_]{5,15}"value = <?php echo $Enabled;?>>
+	
+	<!--Team-->
+<span>Team</span><input name="Team" id="Team" type="text" required="true" title="Mobile Phone Number" pattern="[0-9_]{5,15}"value = <?php echo $Team;?>>
+		
+		
+
+		<?php
+			$sqlData="SELECT * FROM gaaplayermanager2.team;";
+			$rsData=getTableData($conn,$sqlData);
+			$arrayData=checkResultSet($rsData);
+			$conn->close();
+			echo "<select name=\"Team\">";
+			$teamCid=$Team;  //get the current team value
+				foreach($arrayData as $row) {
+					$name = $row['Name'];
+					$id=$row['Team_ID'];  //get the current PK value
+			echo "$sqlData";
+		?>
+
+<span>Team</span><option value="<?php echo $row['Team_ID']; ?>" <?php if ($team == $row['Team_ID']) { echo 'selected'; } ?> ><?php echo $name; ?></option>
+		<?php 	} 	?>
+</select><br>
+<span>Image</span>
+<input type="file" name="fileToUpload" id="fileToUpload" value = <?php echo $image;?>><br>
+
+
+<label>
+<button class="smallBtn" name="SAVE" type="submit" value="<?php echo $id;?>">Update</button>
+<button class="smallBtn" name="CANCEL" type="submit" value="">Cancel</button>
+</label>
+</td></tr>
+</table>
+</div>
+</form>
+	

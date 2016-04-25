@@ -1,0 +1,139 @@
+
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;" charset="UTF-8">
+<html>
+<head>
+<title>MySQLi</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<!--bootstrap-->
+	<link href="CSS/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+
+</head>
+<body >
+<!----------------- HEADER SECTION ----------------------->
+<!--====================================================-->
+	<div class="container">
+	<div class="row">
+				<div class="col-xs-12 col-md-12">
+<header></header>
+ 
+				</div>
+  				
+
+</div>
+
+
+<!--//----------------NAVIGATION SECTION----------------------//-->
+<!--//========================================================//-->
+	<div class="row">
+		<div class="col-xs-12 col-md-12">
+<nav><ul><li><a href="2_Index.php"><img src="IMAGES/2.home.PNG" alt="Home" width="50" height="50"></a></li><li><a href="3_Schedule.php"><img src="IMAGES/3.schedule.PNG" alt="Schedule" width="50" height="50"></a></li><li><a href="4_Profiles.php"><img src="IMAGES/4.profile.PNG" alt="Profiles" width="50" height="50"></a></li><li><a href="5_Statistics.php"><img src="IMAGES/5.stats.PNG" alt="Statistics" width="50" height="50"></a></li><li><a href="6_Training.php"><img src="IMAGES/6.training.PNG" alt="Training" width="50" height="50"></a></li><li><a href="7_Games.php"><img src="IMAGES/7.games.PNG" alt="Games" width="50" height="50"></a></li><li><a href="8_Injuries.php"><img src="IMAGES/8.injuries.PNG" alt="Injuries" width="50" height="50"></a></li><li><a href="9_Message.php"><img src="IMAGES/9.message.PNG" alt="Messages" width="50" height="50"></a></li><li><a href="10_Reports.php"><img src="IMAGES/10.reports.PNG" alt="Reports" width="50" height="50"></a></li><li><a href="11_Settings.php"><img src="IMAGES/11.settings.PNG" alt="Settings" width="50" height="50"></a></li><li><a href="12_Logout.php"><img src="IMAGES/12.logout.PNG" alt="Logout" width="50" height="50"></a></li></ul></nav>
+ 
+</div>
+</div>
+
+
+        <div class="row">
+                <div class="col-xs-12 col-md-12">
+                        <div id="navigation_option">
+                                <h1>Loughmore Castleiney Training</h1>
+                        </div><br>
+                </div>
+        </div>
+
+
+<form class="newplayerform" method="post" autocomplete="off" action="/gaamanager/6.2_Training_Edit.php">
+	<div>
+	<h2>Edit Training Session</h2>
+	<table class="npform">
+	<tr><td>
+	<label>
+
+<select name="Season">	<option value="1"  >2015</option>
+		<option value="2" selected >2016</option>
+		<option value="3"  >2017</option>
+		<option value="4"  >2018</option>
+		<option value="5"  >2019</option>
+		<option value="6"  >2020</option>
+	</select><br><select name="TrainingType">	<option value="1"  >Gym</option>
+		<option value="2" selected >Strenght and Condition</option>
+		<option value="3"  >Drills and Match</option>
+		<option value="4"  >Skills</option>
+	</select><br>
+<!--Choose a date-->
+<label>Date</label>
+<input name="Training_Date" type="date" required="false" title="Date" pattern="[a-zA-Z0-9óáéí' ]{1,200}"value = "2016-04-02"><br>
+
+<!--Choose a Time-->
+<label>Time</label>
+<input name="Training_Time" type="time" required="false" title="Time (24hr)" pattern="[a-zA-Z0-9óáéí' ]{1,200}"value = "08:00:00"><br>
+
+<!--Notes-->
+<label>Notes</label>
+<input name="Notes" type="text" id="myText" pattern="[a-zA-Z0-9óáéí'- ]{1,200}" value="hey brother"/><br>
+
+<!--Estimated RPE-->
+<span>Estimated RPE</span>
+<input name="EstimatedRPE" type="text" required="true"  title="EstimatedRPE" pattern="[0-9 ]{1,10}" value = "5"><br>
+
+<!--Estimated Lenght-->
+<span>Estimated Lenght</span>
+<input name="EstimatedLenght" type="text" required="true"  title="EstimatedLenght" pattern="[0-9 ]{1,10}" value = "60"><br>
+
+<!--RPE Lower Limit-->
+<label>RPE Lower Limit</label>
+<input name="RPELowLimit" type="text" required="false"  title="RPELowLimit" pattern="[0-9 ]{1,10}" value = "240"><br>
+
+<!--RPE Estimated Limit-->
+<label>RPE Estimated Limit</label>
+<input name="RPEEstimatedLimit" type="text" required="false"  title="RPEEstimatedLimit" pattern="[0-9 ]{1,10}" value = "300"><br>
+
+<!--RPE Lower Limit-->
+<label>RPE Upper Limit</label>
+<input name="RPEUpperLimit" type="text" required="false"  title="RPEUpperLimit" pattern="[0-9 ]{1,10}" value = "360"><br>
+
+
+<tr><td>
+<label>
+<button class="smallBtn" name="SAVE" type="submit" value="">Update</button>
+<button class="smallBtn" name="CANCEL" type="submit" value="">Cancel</button>
+</label>
+</td></tr>
+</table>
+</div>
+</form>
+
+
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<footer class="copyright">Copyright 2016 GAA Player Manager</footer></div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

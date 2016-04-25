@@ -1,0 +1,20 @@
+<form class="newplayerform" method="post" autocomplete="off" action="<?php echo $_SERVER['PHP_SELF'];?>">
+	<div>
+		<h2>Edit Team Name</h2>
+			<table class="npform">
+				<tr><td>
+					<label>
+						<span>Team Name</span>
+						<input name="Teamname" type="text" pattern="[a-zA-Z0-9óáéí' - ]{1,200}" value = "<?php echo $Teamname; ?>">
+					</label>
+				</td></tr>
+
+				<tr><td>
+					<label>
+						<br><span>Hit Enter to Change Name</span>
+						<input name="send" type="submit" id="sendButton" value="Enter">
+					</label>
+				</td></tr>
+			</table>
+	</div>
+</form>
